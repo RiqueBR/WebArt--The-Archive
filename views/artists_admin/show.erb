@@ -1,0 +1,14 @@
+<h1>Artist in focus: </h1>
+
+<p><%= @artist.first_name %></p>
+<p><%= @artist.last_name %></p>
+<p><%= @artist.artist_info%></p>
+<img class="image-container" src="<%= @artist.artist_img%>" alt="<%=@artist.first_name%>"> 
+
+<form action="/admin/artist/<%= @artist.id %>/edit" method="get">
+  <input type="submit" value="Edit Artist">
+</form>
+
+<form action="/admin/artist/<%= @artist.id %>/delete" method="post">
+  <input type="submit" value="Delete">
+</form>

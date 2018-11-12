@@ -1,0 +1,8 @@
+<h1>Exhibition View</h1>
+
+<% for exhibition in @exhibitions %>
+<p>Title: <%= exhibition.name %></p>
+<p>Category: <%= exhibition.category %></p>
+<p>Artist: <%= exhibition.artist.first_name %>
+<p><a href="/admin/exhibition/<%= exhibition.id %>">More Information</a></p>
+<% end %>

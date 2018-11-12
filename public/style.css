@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+
+h1 {
+
+}
+
+body {
+  background-color: #FFFF;
+  font-family: "PT Sans", sans-serif;
+}
+
+
+img {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  align-content: center;
+}
+
+.container-all {
+  display: flex;
+  flex-flow: row;
+
+}
+
+.box-grouped {
+display: flex;
+flex-flow: row wrap;
+width: 60vw;
+}
+
+
+.box-1 {
+  border: 1px solid #FFF;
+  width: 25%;
+  height: 30%;
+  justify-content: space-around;
+}
+
+
+.box-2 {
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 1px solid #FFF;
+  width: 25%;
+  height: 30%;
+  justify-content: space-around;
+
+}
+
+
+.box-3 {
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 1px solid #FFF;
+  width: 49%;
+  height: 40%;
+  justify-content: space-around;
+}
+
+.box-4 {
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 1px solid #FFF;
+  width: 40%;
+  height: 40%;
+  justify-content: space-around;
+}
+
+.container-text {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-right: 10px;
+}
+
+.text-area {
+  width: 200px;
+  height: auto;
+}
+
+.p {
+  font-size: 14px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  color: black;
+}
+
+nav a {
+  text-decoration: none;
+}

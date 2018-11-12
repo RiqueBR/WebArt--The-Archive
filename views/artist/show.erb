@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="/style-artist-show.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Artist</title>
+</head>
+<body>
+
+<h1>Artist:</h1>
+  <img class = "image-container" src="<%= @artist.artist_img%>" alt="<%=@artist.first_name%>">
+  <p><%= @artist.first_name %></p>
+  <p><%= @artist.last_name %></p>
+  <p><%= @artist.artist_info%></p>
+  
+
+</body>
+</html>

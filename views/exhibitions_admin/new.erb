@@ -1,0 +1,22 @@
+<form action="/admin/exhibition" method="post">
+  <label for="name">Title:</label>
+  <input type="text" name="name" id="name">
+
+  <label for="Category">Category:</label>
+  <input type="text" name="category" id="category">
+
+  <label for="artist-select">Select Artist:</label>
+  <select id="artist_id" name="artist_id">
+    <% for artist in @artists %>
+    <option value="<%= artist.id%>"><%= artist.first_name%></option>
+    <% end %>
+  </select>
+
+  <label for="exhibition_info">Description:</label>
+  <input type="text" name="exhibition_info" id="exhibition_info">
+
+  <label for="exhibit_img">Add Image:</label>
+  <input type="text" name="exhibit_img" id="exhibit_img">
+
+  <input type="submit" value="Create">
+</form>
