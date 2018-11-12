@@ -14,9 +14,6 @@ get '/admin/exhibition' do
   erb :"exhibitions_admin/index" , :layout => :admin_layout
 end
 
-## Remember to create a folder with artist views and exhibitions views
-## Also, visitor will have a different layout look in comparison to admin
-
 get '/admin/artist/new' do
   erb :"artists_admin/new" , :layout => :admin_layout
 end
